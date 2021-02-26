@@ -15,7 +15,23 @@ https://github.com/raspberry-pi-maker/NVIDIA-Jetson/tree/master/useful_scripts
 # recipe for target 'all' failed问题解决方案
 保证网格有梯子
 
-# Package opencv4 was not found in the pkg-config search path. Perhaps you should add the directory containing `opencv4.pc'
+# 安装dlib及其环境：
+$ sudo apt install libblas-dev liblapack-dev libjpeg-turbo8-dev libopenblas-dev
 
-$sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
-$sudo ldconfig
+$ sudo apt install libx11-dev
+
+$ sudo apt install libboost-all-dev
+
+//编译前注释掉dlib/cuda下cudnn_dlibapi.cpp文件的第853行的forward_algo = forward_best_algo
+$ wget https://github.com/davisking/dlib/archive/v19.21.zip
+
+```
+tar xvf dlib-19.21.tar.bz2
+cd dlib-19.21/
+mkdir build
+cd build
+cmake -DBUILD_SHARED_LIBS=ON -DDLIB_USE_LAPACK=1 ..
+cmake --build . --config Release
+sudo make install
+sudo ldconfig
+```
