@@ -38,6 +38,3 @@ sudo ldconfig
 
 # Gtk安装
 $sudo apt install libcanberrra-gtk*
-
-cmake -DBUILD_SHARED_LIBS=ON -DDLIB_USE_LAPACK=1 ..装
-cmake -DBUILD_SHARED_LIBS=ON -DDLIB_USE_LAPACK=1 ..
