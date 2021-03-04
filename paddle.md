@@ -2,7 +2,7 @@
 # 安装 python3.8
 ```
 删除源python
-sudo apt autoremove python3
+sudo apt autoremove *python3*
 下载源码
 wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
 解压源码
