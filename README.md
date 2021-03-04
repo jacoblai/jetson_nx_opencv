@@ -30,9 +30,9 @@ $ sudo apt install libx11-dev
 $ sudo apt install libboost-all-dev
 
 //编译前注释掉dlib/cuda下cudnn_dlibapi.cpp文件的第853行的forward_algo = forward_best_algo
-$ wget https://github.com/davisking/dlib/archive/v19.21.zip
 
 ```
+wget https://github.com/davisking/dlib/archive/v19.21.zip
 tar xvf dlib-19.21.tar.bz2
 cd dlib-19.21/
 mkdir build
