@@ -1,5 +1,12 @@
 # jetson_nx_opencv
 
+# root迁移到ssd
+https://github.com/jetsonhacks/rootOnNVMe
+swap挂载
+
+# python3相关环境安装 升级到3.8
+
+
 # jtop安装
 $sudo apt-get install python3-pip
 
