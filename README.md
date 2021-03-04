@@ -5,7 +5,7 @@ https://github.com/jetsonhacks/rootOnNVMe
 swap挂载
 
 # python3相关环境安装 升级到3.8
-
+sudo apt-get install -y python2.7-dev python3.8-dev python-dev python-numpy python3-numpy
 
 # jtop安装
 $sudo apt-get install python3-pip
