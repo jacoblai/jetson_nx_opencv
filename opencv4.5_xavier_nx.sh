@@ -14,8 +14,8 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 folder="$1"
-user="nvidia"
-passwd="nvidia"
+user="jac"
+passwd="9090"
 
 echo "** Remove OpenCV4.1 first"
 sudo sudo apt-get purge *libopencv*
