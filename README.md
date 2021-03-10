@@ -1,4 +1,6 @@
 # jetson_nx_opencv
+nvidia gpu arch bin
+https://developer.nvidia.com/zh-cn/cuda-gpus
 
 # jtop安装
 $sudo apt-get install python3-pip
