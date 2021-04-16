@@ -1,6 +1,7 @@
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
+sudo apt install ubuntu-drivers-common
 ubuntu-drivers devices
 sudo apt -o Acquire::http::proxy=http://192.168.101.73:1080 install nvidia-driver-450
 sudo reboot
