@@ -36,8 +36,8 @@ wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.0.5/10
 安装添加软连接
 ```
 sudo tar -xvf cudnn-10.2-linux-x64-v8.0.5.39.tgz
-sudo cp cuda/lib64/* /usr/local/cuda-10.2/lib64/
-sudo cp cuda/include/* /usr/local/cuda-10.2/include/
+sudo cp -a cuda/lib64/. /usr/local/cuda-10.2/lib64/
+sudo cp -a cuda/include/. /usr/local/cuda-10.2/include/
 sudo vim /etc/ld.so.conf.d/cuda.conf
 //添加
 /usr/local/cuda/lib64
