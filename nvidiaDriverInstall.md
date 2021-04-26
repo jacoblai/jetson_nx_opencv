@@ -9,6 +9,16 @@ nvidia-smi
 nvidia-smi -L
 ```
 
+ubuntu20.04TLS
+```
+$sudo apt install gcc-7  g++-7
+$sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 90 --slave /usr/bin/g++ g++ /usr/bin/g++-7 --slave /usr/bin/gcov gcov /usr/bin/gcov-7
+$sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 70 --slave /usr/bin/g++ g++ /usr/bin/g++-9 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
+$gcc --version
+$gcc-9 --version
+
+```
+
 下载cuda :https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal
 
 ```
